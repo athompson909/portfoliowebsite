@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>مشکی</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="مشکی: کتابخانه سی‌اس‌اس، مخصوص طراحی صفحات زیبا و واکنشگرا"
+  <meta name="keywords" content="HTML,CSS,Meshki,UI,Framework,JavaScript">
+  <meta name="author" content="Mohammad reza Hajianpour">
+  <meta property="og:title" content="مشکی"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="../meta-image.png"/>
+  <meta property="og:url" content="https://borderliner.github.io/Meshki/rtl"/>
+  <meta property="og:description" content="مشکی: کتابخانه سی‌اس‌اس، مخصوص طراحی صفحات زیبا و واکنشگرا"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Meshki_UI">
+  <meta name="twitter:title" content="Meshki UI">
+  <meta name="twitter:description" content="مشکی: کتابخانه سی‌اس‌اس، مخصوص طراحی صفحات زیبا و واکنشگرا">
+  <meta name="twitter:image" content="../meta-image.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- DEVELOPMENT FILES
+  <link rel="stylesheet" type="text/css" href="../../dist/meshki.min.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/plugins/rtl.min.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/plugins/button-colors.min.css">
+  <script type="text/javascript" src="../../dist/meshki.min.js"></script>
+  DEVELOPMENT FILES -->
+  <!-- PRODUCTION FILES -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/meshki.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/plugins/rtl.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/plugins/button-colors.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/meshki.min.js"></script>
+  <!-- PRODUCTION FILES -->
+
+  <link rel="stylesheet" type="text/css" href="custom-rtl.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css">
+</head>
+
+<body class="">
+  <div class="sidenav push">
+    <a href="javascript:void(0);" class="sidenav-close-button" onclick="meshki.closeNav()">&times;</a>
+    <a href="">خانه</a>
+    <a href="https://github.com/Borderliner/Meshki/issues">ایرادات</a>
+    <a href="http://borderliner.ir/blog/">وبلاگ</a>
+    <a href="https://github.com/Borderliner/Meshki/blob/master/README.md">درباره مشکی</a>
+    <hr class="hide-on-non-mobile">
+    <div class="hide-on-non-mobile">
+      <a href="#buttons-doc" onclick="meshki.closeNav()">دکمه‌ها</a>
+      <a href="#sidenav-doc" onclick="meshki.closeNav()">کشو</a>
+      <a href="#navbar-doc" onclick="meshki.closeNav()">منو</a>
+      <a href="#grid-doc" onclick="meshki.closeNav()">صفحه‌بندی</a>
+      <a href="#form-doc" onclick="meshki.closeNav()">اجزای فرم</a>
+      <a href="#typography-doc" onclick="meshki.closeNav()">نگارش</a>
+      <a href="#tables-doc" onclick="meshki.closeNav()">جدول‌ها</a>
+      <a href="#footer-doc" onclick="meshki.closeNav()">پابرگ</a>
+    </div>
+    <hr>
+    <button onclick="location.href='https://twitter.com/Meshki_UI'" class="button blue medium"><b>مشکی در </b><i class="fa fa-twitter" aria-hidden="true"></i></button>
+    <button onclick="location.href='https://www.npmjs.com/package/meshki'" class="button red medium"><b>مشکی در npm</b></button>
+    <button onclick="location.href='https://github.com/Borderliner/Meshki'" class="button medium"><b>مشکی در </b><i class="fa fa-github" aria-hidden="true"></i></button>
+    <a href="javascript:void(0)" disabled style="font-size: 1.5rem">اشتراک‌گذاری در:</a>
+    <div class="share-links">
+      <a class="fb-share" href="https://www.facebook.com/sharer/sharer.php?u=https://borderliner.github.io/Meshki/rtl/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a class="tw-share" href="https://twitter.com/home?status=https://borderliner.github.io/Meshki/rtl/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a class="gp-share" href="https://plus.google.com/share?url=https://borderliner.github.io/Meshki/rtl/" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="nav fixed">
+      <ul>
+        <li><a class="logo" href="javascript:void(0);" onclick="meshki.openNav()"><i class="fa fa-bars" aria-hidden="true"></i>مشکی</a></li>
+        <li class="nav-dropdown hide-on-mobile">
+          <a href="javascript:void(0)" class="nav-dropdown-button">افزونه‌ها</a>
+          <div class="nav-dropdown-content">
+            <a href="/">چپ-به-راست (انگلیسی)</a>
+            <a href="#extra-button-colors">دکمه‌های رنگی بیشتر</a>
+          </div>
+        </li>
+        <li><a href="https://github.com/Borderliner/Meshki/releases">اخبار</a></li>
+        <li><a href="https://github.com/Borderliner/Meshki">گیت‌هاب</a></li>
+        <li class="nav-dropdown hide-on-mobile">
+          <a href="javascript:void(0)" class="nav-dropdown-button">اجزا</a>
+          <div class="nav-dropdown-content">
+            <a href="#buttons-doc">دکمه‌ها</a>
+            <a href="#sidenav-doc">کشو</a>
+            <a href="#navbar-doc">منو</a>
+            <a href="#grid-doc">صفحه‌بندی</a>
+            <a href="#form-doc">اجزای فرم</a>
+            <a href="#typography-doc">نگارش</a>
+            <a href="#tables-doc">جدول‌ها</a>
+            <a href="#footer-doc">پابرگ</a>
+          </div>
+        </li>
+        <li class="nav-left hide-on-tablet">
+          <script type="text/javascript" src="../finder.js"></script>
+          <input type="text" name="searchbox" id="searchbox" placeholder="جستجو..." onkeydown="meshkiUtil.search(this)">
+        </li>
+        <li class="nav-left hide-on-tablet"><button class="green" onclick="meshkiUtil.search(true)"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="row">
+        <img class="text-center title centerize" src="meshki.png"></img>
+        <h2 class="text-center">زیبا.  مشکی.  واکنش‌گرا.</h2>
+      </div>
+
+      <div class="row text-center" style="margin-bottom: 250px;margin-top: 50px;">
+        <div class="button-couple">
+          <a class="button blue large custom-down-cdn" href="https://github.com/Borderliner/Meshki/archive/v1.5.1.zip">دانلود (نسخه 1.5.1)</a>
+          <a class="button large disabled" disabled>یا</a>
+          <a class="button red large custom-down-cdn" href="javascript:void(0)" onclick="var cdn=document.getElementById('cdn');cdn.style.display=='none'?cdn.style.display='block':cdn.style.display='none';">استفاده از <span>CDN</span></a>
+        </div>
+        <p style="color: red">بسیار مهم! <a href="#important-notes">اینجا کلیک کنید!</a></p>
+        <br>
+        <pre id="cdn" style="display: none;">
+          <code>
+https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/meshki.min.css
+https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/meshki.min.js
+
+https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/meshki-rtl.min.css
+          </code>
+        </pre>
+      </div><br>
+
+      <hr />
+      <h3 class="text-center" style="margin-bottom: 50px;">امکانات بی نظیر</h3>
+      <div class="row meshki-features" style="margin-bottom: 20px;">
+
+        <div class="four col text-center">
+          <i class="fa fa-clock-o" aria-hidden="true"></i><br>
+          <span>در کمترین زمان ممکن، ظاهر وب‌سایت خود را طراحی کنید! ما تمام تلاشمان را کرده‌ایم تا «مشکی» را در حد احمقانه‌ای ساده و تمیز نگاه داریم، و همیشه به‌روزترین راهنما را برای شما به‌همراه بیاوریم.</span>
+        </div>
+        <div class="four col text-center">
+          <i class="fa fa-eye" aria-hidden="true"></i><br>
+          <span>نگران چشم‌های شما نیز هستیم! به دلیل استفاده از رنگ مشکی بسیار شیک و ملایم، چشمان شما به هنگام خواندن صفحاتی که از «مشکی» بهره میبرند، در استراحت خواهند بود. این مسئله در سایت‌هایی که متون زیادی دارن حائز اهمیت است.</span>
+        </div>
+        <div class="four col text-center">
+          <i class="fa fa-rocket" aria-hidden="true"></i><br>
+          <span>و مهم‌تر از همه! به خاطر کدهای بسیار کم و بهینه، و به‌کارگیری از ساختارهای ساده، «مشکی» بسیار کم حجم و سبک است و منابع سخت‌افزاری کمی را مصرف می‌کند.</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col twelve text-center">
+          <img id="retro-logo-buttons" src="../retro.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>مشکی چیست؟</h3>
+        <hr>
+        <p>
+          مشکی یک کتابخانه ساده، مشکی-رنگ و واکنش‌گرای CSS است، تا بتوان به راحتی پروژه‌های جدید را شروع کرد. فقط 17 کیلوبایت (فشرده شده) یا 40 کیلوبایت (معمولی) حجم دارد، که این شامل تمامی فایل‌های CSS و JS می‌شود، که همین سبب می‌شود یک کتابخانه عالی برای پروژه‌های کوچک تا متوسط باشد. مشکی آسان، تمیز و به معنای واقعی کلمه، زیباست. ابتدا به عنوان یک Fork از پروژه <a href="http://getskeleton.com/" target="_blank">اسکلتون</a> شروع شد، و در حال حاضر هم از برخی کدهای اسکلتون استفاده میکند، اما تغییرات به حدی زیاد بود که وقتی به مشکی نگاه میکنید، به سختی میتوان گفت که مشکی شبیه به اسکلتون است.
+        </p>
+        <p>
+        از نگاه کردن به کدهای مشکی واهمه نداشته باشید! اگر ایرادی مشاهده کردید، یا قسمتی از مشکی نیاز به ارتقاء داشت، به <a href="https://github.com/Borderliner/Meshki" target="_blank">مخزن گیتهاب ما</a> بروید و یک Issue یا Pull Request باز کنید!
+        </p>
+      </div>
+
+      <div class="row">
+        <h3>چرا مشکی؟</h3>
+        <hr>
+        <p>
+          سوال خوبی است! همانطور که میدانید، کتابخانه‌های بسیار زیاد و متنوعی در دنیای اینترنت وجود دارند، اما چه چیزی مشکی را متفاوت می‌کند؟
+        </p>
+        <p>
+        مشکی سعی می‌کند که سبک-وزن، اما کاربردی باشد. بر خلاف اکثر کتابخانه‌هایی که مدعی سبک-وزن بودن هستند، مشکی کاربردی بودن را فدای سبک-وزن بودن محض نمی‌کند. این بدین معناست که شما به اختراع دوباره نیازی ندارید، و بسیاری از اجزای مشکی، بدون تغییرات اضافی قابل استفاده هستند. همه میتوانند کتابخانه های زیر 18 کیلوبایت بسازند، اما این برای کاربردی بودن کافیست؟
+        </p>
+        <p>
+        در همین راستا، مشکی سعی می‌کند تا یک ظاهر فوق‌العاده جذاب را به ارمغان بیاورد: رنگ مشکی چشمان شمارا اذیت نمی‌کند، و سادگی و ظرافتی بی نظیر را تقدیم شما می‌کند. یکی از اهداف اصلی مشکی، پایدار و قابل اطمینان بودن است. برای همین ما تمام تلاشمان را می‌کنیم تا مشکی را همیشه به-روز نگاه داریم و ایرادات آن را به سرعت برطرف کنیم. مشکی درحال حاضر به اندازه کافی پایدار است.
+        </p>
+        <p>
+        مشکی و اسکلتون تفاوت‌های بسیاری دارند. اگرچه مشکی از اسکلتون مشتق شده است، ولی به شدت کامل‌تر از والد خود می‌باشد. کافیست به سایت اسکلتون نگاه کنید. مقدار زیادی از کدهای درون وب‌سایت متعلق به اسکلتون نیست و فایل‌های جدای CSS نیز وجود دارند. اما <b>این سایت به طور خالص از مشکی استفاده می‌کند</b>، و از یک فایل <a href="custom-rtl.css" id="components" target="_blank">custom-rtl.css</a> برای شخصی‌سازی بهره می‌برد.
+        </p>
+      </div>
+
+      <div class="row">
+        <h3>شروع به کار</h3>
+        <hr>
+        <p>
+          مشکی از یک ساختار ثابت، برای کاهش دردسرهای مربوط به کلاس‌ها و idها استفاده می‌نماید. برای همین، کافیست تا از همین ساختار برای تمامی برنامه‌هایتان استفاده کنید. نگران نباشید، این ساختار بسیار ابتدایی و پایه می‌باشد و شما را به هیچ عنوان محدود نمی‌کند.
+        </p>
+        <p>
+          ابتدا، یک <code>div</code> که شامل کلاس <code>sidenav</code> است را بلافاصله بعد از شروع تگ <code>body</code> بسازید. لینک‌های <a href="#sidenav-doc">کشو</a> در اینجا سکونت خواهند داشت. سپس، یک <code>div</code> دیگر بعد از div کشو بسازید، که شامل کلاس <code>content</code> باشد. تمامی مطالب اصلی شما باید درون این div قرار بگیرد. اجزای این صفحه را با مرورگر خود مشاهده کنید تا ساختار دقیق را متوجه شوید. کد زیر هم نمونه‌ای از این ساختار است:
+        </p>
+        <pre>
+          <code class="language-html">
+    &lt;!DOCTYPE html>
+    &lt;html>
+    &lt;head>
+      &lt;title>مشکی&lt;/title>
+      &lt;meta charset="UTF-8">
+      &lt;!-- تا صفحه قابل مشاهده در موبایل باشد -->
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+
+      &lt;!-- OpenSans اضافه کردن فونت -->
+      &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+      &lt;!-- اضافه کردن فایلهای مشکی -->
+      &lt;link rel="stylesheet" type="text/css" href="dist/meshki.min.css">
+      &lt;script type="text/javascript" src="dist/meshki.min.js">&lt;/script>
+
+      &lt;!-- نسخه فارسی مشکی باید بعد از مشکی اصلی اضافه شود -->
+      &lt;link rel="stylesheet" type="text/css" href="dist/meshki-rtl.min.css">
+    &lt;/head>
+    &lt;body>
+
+      &lt;div class="sidenav">
+        &lt;!-- لینک‌های کشو اینجا هستند -->
+      &lt;/div>
+
+      &lt;div class="container">
+
+        &lt;!-- این منوی شماست -->
+        &lt;nav>
+          &lt;ul>
+            &lt;li>&lt;a class="logo" href="javascript:void(0)">وب‌سایت من&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/nav>
+
+        &lt;!-- مطالب صفحه در اینجا قرار میگیرد -->
+        &lt;div class="content">
+          &lt;h3>به وب‌سایت من خوش‌آمدید!&lt;/h3>
+          &lt;p>این یک پاراگراف نمونه است.&lt;/p>
+        &lt;/div>
+
+        &lt;!-- و در آخر، پابرگ زیبای شما -->
+        &lt;footer>
+          &lt;div class="row">
+            &lt;div class="six col">
+              &lt;p>یک متن در پابرگ&lt;/p>
+            &lt;/div>
+          &lt;/div>
+        &lt;/footer>
+      &lt;/div>
+
+    &lt;/body>
+          </code>
+        </pre>
+
+        <div class="row">
+          <figure class="twelve centerize text-center">
+            <img class="responsive" src="../meshki_structure.png" />
+            <figcaption>
+              شکل بالا ساختار توصیه شده برای ساختن برنامه با مشکی را تشریح می‌کند.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>اجزا</h3>
+        <hr>
+        <p>
+          مشکی اجزای متنوع آماده برای استفاده دارد، که میتوانید هرجا که خواستید از آنها استفاده کنید. توجه داشته باشید که <u>کوچک بودن و «کافی» بودن از اهداف اصلی ما هستند</u>، و <u>مشکی یک Framework برای ظاهر وب‌سایت نیست</u>. بنابراین شاید نیاز باشد تا کتابخانه‌های کوچک دیگری نیز برای زیباسازی بیشتر اضافه کنید. با این حال، بیشتر اجزای پراستفاده در اختیار شما قرار گرفته‌اند و آزموده شده‌اند. نگران چیزی نباشید! ما این اطمینان را به شما می‌دهیم که به-روزترین کتابخانه در اختیار شما قرار گیرد تا تجربه‌ای زیبا با مشکی داشته باشید، و اجزای جدیدی را در آینده معرفی خواهیم کرد.
+        </p>
+        <p>
+          لیستی از اجزای قابل استفاده را برای شما آماده کرده‌ایم:
+        </p>
+      </div>
+
+      <div class="row">
+        <div id="buttons-doc"></div>
+        <h4>دکمه‌ها</h4>
+        <hr>
+        <p>
+          شما به راحتی می‌توانید با استفاده از <code>a</code> و <code>button</code> و <code>[input[type=submit</code> و <code>[input[type=reset</code> و <code>[input[type=button</code> دکمه‌های مختلف و متنوعی را بسازید. 5 رنگ مختلف برای دکمه‌ها وجود دارد:
+        </p>
+        <div class="centerize text-center">
+          <a class="button small">ساده</a>
+          <button class="blue medium">آبی</button>
+          <input type="submit" class="green large" value="سبز" />
+          <input type="reset" class="red medium" value="قرمز" />
+          <input type="button" class="orange small" value="نارنجی" />
+          <br><br><br>
+          <div class="button-couple">
+            <button class="blue medium">موافقم</button>
+            <button class="medium disabled" disabled>یا</button>
+            <button class="red medium">موافق نیستم</button>
+          </div>
+          <br><br>
+          <button class="blue expand small">دکمه کوچک وسیع</button>
+          <button class="red expand medium">دکمه متوسط وسیع</button>
+          <button class="expand medium" disabled>دکمه غیرفعال متوسط وسیع</button>
+          <button class="expand large">دکمه بزرگ وسیع</button>
+        </div><br>
+
+        <span>کدهای مربوطه از این قرار هستند:</span><br><br>
+          <pre>
+            <code class="language-html">
+    &lt;a class="button small"&gt;ساده&lt;/a&gt;
+    &lt;button class="blue medium"&gt;آبی&lt;/button&gt;
+    &lt;input type="submit" class="green large" value="سبز" /&gt;
+    &lt;input type="reset" class="red medium" value="قرمز" /&gt;
+    &lt;input type="button" class="orange small" value="نارنجی" /&gt;
+
+    &lt;div class="button-couple">
+      &lt;button class="blue">موافقم&lt;/button>
+      &lt;button>یا&lt;/button>
+      &lt;button class="red">موافق نیستم&lt;/button>
+    &lt;/div>
+
+    &lt;button class="expand large"&gt;دکمه بزرگ وسیع&lt;/button&gt;
+            </code>
+          </pre>
+      </div>
+
+      <div class="row">
+        <div id="sidenav-doc"></div>
+        <h4>کشو</h4>
+        <hr>
+        <p>
+          ساختن کشو آسان است: کافیست یک <code>div</code> با کلاس <code>sidenav</code> دقیقا بعد از شروع تگ body بسازید. سپس از <code>&lt;a></code> ها برای ساخت لینک‌های کشو استفاده کنید. کاملا آسان و ساده است. از توابع جاوااسکریپت <code>()meshki.openNav</code> و <code>()meshki.closeNav</code> روی کلیک دکمه‌ها استفاده کنید تا کشو باز و بسته شود. همچنین می‌توانید با اضافه کردن کلاس <code>push</code> داستان را جذاب‌تر کنید! مثال زیر را در نظر بگیرید:
+        </p>
+        <pre>
+          <code class="language-html">
+    &lt;body>
+      &lt;div class="sidenav push">
+        &lt;!-- از پرش به بالای صفحه جلوگیری می‌کند javascript:void(0) توجه کنید که تابع -->
+        &lt;a href="javascript:void(0)" class="sidenav-close-button" onclick="meshki.closeNav()">&amp;times;&lt;/a>
+        &lt;a href="">خانه&lt;/a>
+        &lt;a href="https://github.com/Borderliner/Meshki">گیتهاب&lt;/a>
+        &lt;a href="http://borderliner.ir">درباره من&lt;/a>
+        &lt;a href="https://github.com/Borderliner/Meshki/blob/master/README.md">درباره مشکی&lt;/a>
+        &lt;hr>
+        &lt;a href="javascript:void(0)" disabled>اشتراک گذاری در:&lt;/a>
+      &lt;/div>
+    .
+    .
+    .
+          </code>
+        </pre>
+      </div>
+
+      <div class="row">
+        <div id="navbar-doc"></div>
+        <h4>منو</h4>
+        <hr>
+        <p>
+          مشکی همراه با یک منوی زیبا در خدمت شماست! بعد از شروع <code>div.content</code> یک <code>&lt;"div class="nav></code> یا <code>&lt;nav></code> بسازید، و درون آن یک <code>&lt;ul></code> قرار دهید. حال به ازای هر <code>&lt;li>&lt;a>&lt;/a>&lt;/li></code> درون <code>&lt;ul></code>، یک دکمه به منوی شما اضافه می‌شود. همچنین می‌توانید از کلاس <code>fixed</code> برروی منوی خود استفاده کنید تا منوی شما به بالای صفحه بچسبد.
+        </p>
+        <pre>
+          <code class="language-html">
+    &lt;div class="nav fixed">
+      &lt;ul>
+        &lt;!-- از پرش به بالای صفحه جلوگیری می‌کند javascript:void(0) توجه کنید که تابع -->
+        &lt;li>&lt;a class="logo" href="javascript:void(0)" onclick="meshki.openNav()">مشکی&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="https://github.com/Borderliner/Meshki/releases">اخبار&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="https://github.com/Borderliner/Meshki">گیتهاب&lt;/a>&lt;/li>
+        
+        &lt;!-- کشوها در منو -->
+        &lt;li class="nav-dropdown">
+          &lt;a href="javascript:void(0)" class="nav-dropdown-button">عنوان&lt;/a>
+          &lt;div class="nav-dropdown-content">
+            &lt;a href="#">زیر شاخه 1&lt;/a>
+            &lt;a href="#">زیر شاخه 2&lt;/a>
+            &lt;a href="#">زیر شاخه 3&lt;/a>
+          &lt;/div>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+          </code>
+        </pre>
+      </div>
+
+      <div class="row">
+        <div id="grid-doc"></div>
+        <h4>صفحه‌بندی</h4>
+        <hr>
+        <p>
+          هر صفحه از 12 ستون شناور، با حداکثر عرض 960 پیکسل ساخته شده است، که با کوچک‌تر کردن صفحه مرورگر یا دستگاه شما، این ستون ها کوچک‌تر می‌شوند. حداکثر عرض نیز با یک خط CSS قابل تغییر و شخصی سازی می‌باشد، و تمامی ستون‌ها منطبق بر حداکثر عرض جدید خواهند بود. طریقه استفاده از سیستم صفحه‌بندی مشکی بسیار آسان است. همین حالا صفحه مرورگر خود را کوچکتر کنید تا متوجه تغییرات شوید!
+        </p>
+        <p>
+        <b>نکته:</b> ستون ها باید اولین اجزا بعد از <code>div.row</code> باشند. این بسیار حائز اهمیت است.
+        </p>
+      </div>
+
+      <div class="row grid-table">
+        <div>
+          <div class="one col">یک</div>
+          <div class="eleven col">یازده</div>
+        </div>
+        <div>
+          <div class="two col">دو</div>
+          <div class="ten col">ده</div>
+        </div>
+        <div>
+          <div class="three col">سه</div>
+          <div class="nine col">نه</div>
+        </div>
+        <div>
+          <div class="four col">چهار</div>
+          <div class="eight col">هشت</div>
+        </div>
+        <div>
+          <div class="five col">پنج</div>
+          <div class="seven col">هفت</div>
+        </div>
+        <div>
+          <div class="six col">شش</div>
+          <div class="six col">شش</div>
+        </div>
+        <div>
+          <div class="seven col">هفت</div>
+          <div class="five col">پنج</div>
+        </div>
+        <div>
+          <div class="eight col">هشت</div>
+          <div class="four  col">چهار</div>
+        </div>
+        <div>
+          <div class="nine col">نه</div>
+          <div class="three col">سه</div>
+        </div>
+        <div>
+          <div class="ten col">ده</div>
+          <div class="two col">دو</div>
+        </div>
+        <div>
+          <div class="eleven col">یازده</div>
+          <div class="one col" style="margin-bottom: 50px">یک</div>
+        </div>
+        <div>
+          <div class="six col">بدون انحراف</div>
+          <div class="six col">شش</div>
+        </div>
+        <div>
+          <div class="six offset-by-two col">با انحراف 1/6</div>
+          <div class="four col">چهار</div>
+        </div>
+        <div>
+          <div class="six offset-by-one-third col">با انحراف 1/3</div>
+          <div class="two col">دو</div>
+        </div>
+        <div>
+          <div class="six offset-by-one-half col">با انحراف 1/2</div>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          کد زیر یک نمونه کد برای سیستم صفحه مشکی است:
+        </p>
+          <pre>
+            <code class="language-html">
+    &lt;div class="row"&gt;
+      &lt;div class="one col"&gt;
+        با عرض یک ستون div یک
+      &lt;/div&gt;
+      &lt;div class="eleven col"&gt;
+       با عرض یازده ستون div یک
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="one-third col"&gt;
+        با عرض یک سوم کل صفحه div یک
+      &lt;/div&gt;
+      &lt;div class="two-thirds col"&gt;
+        با عرض دو سوم کل صفحه div یک
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="one-half col"&gt;
+        با عرض نصف کل صفحه div یک
+      &lt;/div&gt;
+      &lt;div class="one-half col"&gt;
+        با عرض نصف بقیه کل صفحه div یک
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+      &lt;div class="six offset-by-two col"&gt;
+        &lt;!-- یک ستون 6 عرضی را به اندازه 2 ستون منحرف می‌کند -->
+      &lt;/div&gt;
+      &lt;div class="two col"&gt;
+        &lt;!-- بقیه صفحه -->
+      &lt;/div&gt;
+    &lt;/div&gt;
+            </code>
+          </pre>
+      </div>
+
+      <div class="row">
+        <div id="form-doc"></div>
+        <h4>فرم‌ها</h4>
+        <hr>
+        <p>
+          مشکی اجزای فرم مختص به خود را دارد، که همانند بقیه اجزای مشکی، زیبا و خیره کننده هستند. نمونه‌هایی را از این فرم‌ها در زیر مشاهده می‌کنید:
+        </p>
+      </div>
+      <div class="row">
+        <div class="six col">
+          <label for="user1">نام کاربری:</label>
+          <input id="user1" class="expand" type="text" name="user1" placeholder="نام کاربری خود را وارد کنید">
+        </div>
+        <div class="six col">
+          <label for="pass1">رمز عبور:</label>
+          <input id="pass1" class="expand" type="password" name="pass1" placeholder="رمز عبور خود را وارد کنید">
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve col">
+          <label for="dis-email1">پست الکترونیکی:</label>
+          <input id="dis-email1" class="expand" type="email" name="dis-email1" value="hajianpour.mr@gmail.com" disabled>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve col">
+          <textarea class="expand custom-textarea">این یک &lt;textarea> نمونه است! گوشه‌های این باکس گرد است، و وقتی آنرا انتخاب می‌کنید، درخشان‌تر می‌شود. همچنان می‌توانید از گوشه‌ها، آنرا بزرگتر کنید!</textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six col">
+          <select class="expand">
+            <option selected disabled hidden>کشور خود را انتخاب کنید:</option>
+            <option value="ir">ایران</option>
+            <option value="us">آمریکا</option>
+            <option value="ca">کانادا</option>
+            <option value="de">آلمان</option>
+            <option value="jp">ژاپن</option>
+          </select>
+        </div>
+        <div class="six col">
+          <select class="expand" disabled style="width: 100%">
+            <option selected disabled hidden>این باکس غیرفعال است</option>
+            <option value="ir">ایران</option>
+            <option value="us">آمریکا</option>
+            <option value="ca">کانادا</option>
+            <option value="de">آلمان</option>
+            <option value="jp">ژاپن</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six col">
+          <input id="rad-male" type="radio" name="gender" value="male">
+          <label for="rad-male" class="radio">مرد</label>
+          <input id="rad-female" type="radio" name="gender" value="female">
+          <label for="rad-female" class="radio">زن</label>
+          <input id="rad-other" type="radio" name="gender" value="other">
+          <label for="rad-other" class="radio">سایر موارد</label>
+        </div>
+        <div class="six col">
+          <input id="chk-eula" type="checkbox" name="chk-eula">
+          <label for="chk-eula" class="checkbox">قوانین سرویس‌دهی را مطالعه نمودم.</label>
+          <input id="chk-news" type="checkbox" name="chk-news">
+          <label for="chk-news" class="checkbox">مایل هستم از این سایت خبرنامه دریافت کنم.</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="two col">
+          بودجه: <span id="percent_value">0</span> $
+        </div>
+        <div class="nine col">
+          <input class="expand" type="range" id="percent" name="percent" min="0" max="100" step="1" value="0">
+        </div>
+        <div class="one col">
+          <span>100 $</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve col">
+          <fieldset>
+            <legend>نمای کلی</legend>
+            <span><b>نام</b>: والتر</span><br>
+            <span><b>نام خانوادگی</b>: وایت</span><br>
+            <span><b>سن</b>: 50</span><br>
+            <span><b>مکان</b>: آلباکرکی، نیو مکزیکو</span>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <button class="blue expand">ارسال</button>
+      </div>
+      <br />
+      <div class="row">
+        <p>
+          برای درک بهتر، از مثال‌های زیر استفاده کنید:
+        </p>
+          <pre>
+            <code class="language-html">
+    &lt;form>
+      &lt;!-- ورودی‌های متن -->
+      &lt;div class="row">
+        &lt;div class="six col">
+          &lt;label for="user1">نام کاربری:&lt;/label>
+          &lt;input id="user1" class="expand" type="text" name="user1" placeholder="نام کاربری خود را وارد کنید">
+        &lt;/div>
+        &lt;div class="six col">
+          &lt;label for="pass1">رمز عبور:&lt;/label>
+          &lt;input id="pass1" class="expand" type="password" name="pass1">
+        &lt;/div>
+      &lt;/div>
+
+      &lt;!-- ورودی‌های متن غیرفعال -->
+      &lt;div class="row">
+        &lt;div class="twelve col">
+          &lt;label for="dis-email1">پست الکترونیکی:&lt;/label>
+          &lt;input id="dis-email1" class="expand" type="email" name="dis-email1" value="me@borderliner.ir" disabled>
+        &lt;/div>
+      &lt;/div>
+
+      &lt;!-- ناحیه متن -->
+      &lt;div class="row">
+        &lt;div class="twelve col">
+          &lt;textarea class="expand">این یک نمونه است &lt;textarea&gt; element.&lt;/textarea>
+        &lt;/div>
+      &lt;/div>
+
+      &lt;!--فرم کشویی -->
+      &lt;div class="row">
+        &lt;div class="six col">
+          &lt;select class="expand">
+            &lt;option selected disabled hidden>کشور خود را انتخاب کنید:&lt;/option>
+            &lt;option value="ir">ایران&lt;/option>
+            &lt;option value="us">آمریکا&lt;/option>
+            &lt;option value="ca">کانادا&lt;/option>
+            &lt;option value="de">آلمان&lt;/option>
+            &lt;option value="jp">ژاپن&lt;/option>
+          &lt;/select>
+        &lt;/div>
+      &lt;/div>
+
+      &lt;!--چک‌باکس‌ها و دکمه‌های رادیویی -->
+      &lt;div class="row">
+        &lt;div class="six col">
+          &lt;input id="rad-male" type="radio" name="gender" value="male">
+          &lt;label for="rad-male" class="radio">مرد&lt;/label>
+          &lt;input id="rad-female" type="radio" name="gender" value="female">
+          &lt;label for="rad-female" class="radio">زن&lt;/label>
+          &lt;input id="rad-other" type="radio" name="gender" value="other">
+          &lt;label for="rad-other" class="radio">سایر&lt;/label>
+        &lt;/div>
+        &lt;div class="six col">
+          &lt;input id="chk-eula" type="checkbox" name="chk-eula">
+          &lt;label for="chk-eula" class="checkbox">قوانین سرویس‌دهی را مطالعه نمودم.&lt;/label>
+          &lt;input id="chk-news" type="checkbox" name="chk-news">
+          &lt;label for="chk-news" class="checkbox">مایل هستم از این سایت خبرنامه دریافت کنم.&lt;/label>
+        &lt;/div>
+      &lt;/div>
+
+      &lt;!-- مثالی از یک لغزنده -->
+      &lt;div class="row">
+        &lt;input class="expand" type="range" name="percent" min="0" max="100" step="1" value="0">
+      &lt;/div>
+
+      &lt;!-- Fieldset یک نمونه -->
+      &lt;fieldset>
+        &lt;legend>نمای کلی&lt;/legend>
+        &lt;span>نام: والتر&lt;/span>
+        &lt;span>نام خانوادگی: وایت&lt;/span>
+        &lt;span>سن: 50&lt;/span>
+        &lt;span>مکان: آلباکرکی، نیو مکزیکو&lt;/span>
+      &lt;/fieldset>
+    &lt;/form>
+            </code>
+          </pre>
+      </div>
+
+      <div class="row">
+        <div id="typography-doc"></div>
+        <h4>نگارش</h4>
+        <hr>
+        <p>
+          فونت‌ها تماما از طریق <code>rem</code> تنظیم می‌شوند، بنابراین تمامی سایز نوشته‌ها در صفحه به صورت نسبی قابل تنظیم هستند. مشکی هیچگاه فونت‌ها را بدون اجازه دستکاری نمی‌کند. تمامی اندازه‌ها بر مبنای 10 هستند، یعنی یک <code>&lt;h1></code> با سایز فونت <code>5.0rem</code> به معنای 50 پیکسل است.
+        </p>
+      </div>
+      <div class="row">
+        <div class="six col">
+          مشکی از فونت Yekan برای زبان فارسی و از <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> برای زبان انگلیسی استفاده می‌نماید. مشکی این فونت‌هارا به شما تحمیل نمی‌کند. به سادگی می‌توانید فونت‌های مورد نظر خود را جایگزین این فونت‌ها کنید، اما برای داشتن بهترین نگارش، این دو فونت را به شما توصیه می‌کنیم. سایز فونت پیشفرض 1.5rem (یعنی 15 پیکسل)، و فاصله خطوط از هم 1.6 است. بدیهیست که استفاده از انواعی مانند <a href="javascript:void(0);">لینک</a>، <b>درشت</b>، <i>تاکید</i> و <u>زیرخط</u> ممکن است.
+        </div>
+        <div class="six col">
+          <h1>سر برگ <span class="heading-font-size"><code>h1</code> 50rem</span></h1>
+        <h2>سر برگ <span class="heading-font-size"><code>h2</code> 42rem</span></h2>
+        <h3>سر برگ <span class="heading-font-size"><code>h3</code> 36rem</span></h3>
+        <h4>سر برگ <span class="heading-font-size"><code>h4</code> 30rem</span></h4>
+        <h5>سر برگ <span class="heading-font-size"><code>h5</code> 24rem</span></h5>
+        <h6>سر برگ <span class="heading-font-size"><code>h6</code> 15rem</span></h6>
+        </div>
+      </div>
+      <div class="row">
+        <h4>کدها</h4>
+        <hr>
+        <p>
+          شکل‌دهی به کدها در مشکی کار آسانیست: هر چیزی که درون <code>&lt;code></code> قرار بگیرد، <code>این شکلی</code> می‌شود. همچنین می‌توانید کلاس <code>filled</code> را به آن اضافه کنید تا <code class="filled">این شکلی</code> شود. برای قطعه کد‌ها، تگ <code>&lt;code></code> را درون یک تگ <code>&lt;pre></code> قرار دهید.
+        </p>
+        <p>
+          توجه داشته باشید که برای قطعه کدهای دارای کلاس <code>filled</code>، این کلاس باید به pre اضافه شود، نه به code.
+        </p>
+        <p>
+        نکته مهم دیگر اینکه مشکی درحالت عادی، کدها را همانند این صفحه رنگی نمیکند. برای اینکار از <a href="http://prismjs.com/">Prism</a> استفاده نمایید.
+        </p>
+      </div>
+      <div class="row">
+        <div class="twelve col">
+          <pre>
+            <code>
+      &lt;code>bower install meshki&lt;/code>
+
+      &lt;pre>
+        &lt;code>
+        .some-class {
+          background-color: red;
+        }
+        &lt;/code>
+      &lt;/pre>
+            </code>
+          </pre>
+          <pre class="filled">
+            <code>
+      &lt;code class="filled">bower install meshki&lt;/code>
+
+      &lt;pre class="filled">
+        &lt;code>
+        (function(
+          console.log('Hello world!');
+        ))();
+        &lt;/code>
+      &lt;/pre><div id="tables-doc"></div>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="row">
+        <h4>جدول‌ها</h4>
+        <hr>
+        <p>
+          حتما سعی کنید از ساختار صحیح جدول برای ساخت آنها استفاده کنید. یعنی جداول شما باید دارای <code>&lt;thead></code> و <code>&lt;tbody></code> باشد.
+        </p>
+        <p>
+          برای آراستن جداول خود، از کلاسهای زیر استفاده کنید:
+          <ul>
+            <li><code>hover</code> : باعث می‌شود که وقتی با ماوس روی سطرهای جدول میروید، آن سطر پررنگ شود.</li>
+            <li><code>striped</code> : جدول شما را راه‌راه می‌کند (به استثنای نام ستون‌ها)</li>
+          </ul>
+        </p>
+      </div>
+      <div class="row">
+        <div class="twelve col">
+        تغییر شکل: <button class="medium" onclick="var tbl=document.getElementById('table-example');tbl.classList.contains('striped')?(tbl.className='expand hover', this.innerHTML='راه‌راه نیست', this.className='medium'):(tbl.className='expand hover striped', this.innerHTML='راه‌راه است', this.className='medium blue')">راه‌راه نیست</button>
+          <table class="expand hover" id="table-example">
+            <thead>
+              <tr>
+                <th>نام</th>
+                <th>سن</th>
+                <th>جنسیت</th>
+                <th>مکان</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>محمدرضا حاجیانپور</td>
+                <td>23</td>
+                <td>مرد</td>
+                <td>ایران</td>
+              </tr>
+              <tr>
+                <td>کارل جانسون</td>
+                <td>48</td>
+                <td>مرد</td>
+                <td>لس آنجلس</td>
+              </tr>
+              <tr>
+                <td>مَلنا مورگان</td>
+                <td>25</td>
+                <td>زن</td>
+                <td>فلوریدا</td>
+              </tr>
+              <tr>
+                <td>هری ترومن</td>
+                <td>88</td>
+                <td>مرد</td>
+                <td>میسوری</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div id="footer-doc"></div>
+        <h4>پابرگ</h4>
+        <hr>
+        <p>
+          مشکی از یک پابرگ ساده برای استفاده در صفحات وب بهره‌مند است. برای اینکار، از <code>&lt;footer></code> استفاده کنید (یا از <code>div.footer</code> برای مرورگرهایی که از footer پشتیبانی نمیکنند). همچنین میتوانید از کلاس <code>compact</code> برای داشتن پابرگ های فشرده‌تر استفاده کنید.
+        </p>
+        <p>
+        توجه کنید که پابرگ‌های مشکی، سایز مشخصی ندارند و متناسب با حجم متن، بزرگتر می‌شوند.
+        </p>
+        <pre>
+          <code class="language-html">
+    &lt;footer class="compact">
+      &lt;div class="row">
+        &lt;div class="six col">
+          &lt;p>ساخته شده توسط محمدرضا حاجیانپور&lt;/p>
+        &lt;/div>
+        &lt;div class="six col text-center">
+          &lt;p>2016، MIT تحت لیسانس&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/footer>
+          </code>
+        </pre>
+      </div>
+
+      <div class="row">
+        <h4>سایز صفحه</h4>
+        <hr>
+        <p>
+          مشکی از اندازه‌های ثابتی برای صفحه‌بندی خود استفاده می‌کند، اما برای راحتی شما، این سایزها را برای شما لیست کرده‌ایم تا بتوانید بهتر برای دستگاه‌های مختلف برنامه‌نویسی کنید. اندازه‌های مورد استفاده در مشکی از <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> گرفته شده‌اند تا بیشترین هماهنگی را با سایر کتابخانه‌ها به همراه آورد. اولویت این اندازه‌ها با موبایل است (Mobile-First)، یعنی حداقل عرض را تنظیم می‌کند. از این روش برای ساخت سیستم صفحه‌بندی مشکی نیز استفاده شده است و بهترین راه برای نظم‌دهی به کدهای CSS است. طریقه کار این است که اولیت به موبایل‌ها داده شده است تا نیازی نباشد کدهای بسیار زیاد مربوط به دسکتاپ، روی موبایل بارگذاری شود. اگر نیاز به صفحات بزرگ بود، مشکی کدهای جدید را اضافه می‌نماید. این سایز‌ها از قرار زیر هستند:
+        </p>
+      </div>
+      <div class="row">
+        <div class="six col vertical-line">
+          <ul>
+            <li><b>دسکتاپ باکیفیت</b>: 1200 پیکسل</li>
+            <li><b>دسکتاپ</b>: 992 پیکسل</li>
+            <li><b>تبلت</b>: 768 پیکسل</li>
+          </ul>
+        </div>
+        <div class="six col">
+          <ul>
+            <li><b>فبلت</b>: 544 پیکسل</li>
+            <li><b>موبایل</b>: 400 پیکسل</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <pre>
+            <code class="language-css">
+      /* اندازه‌ها با اولویت موبایل */
+
+      /* بزرگتر از موبایل */
+      @media (min-width: 400px) {}
+
+      /* بزرگتر از فبلت */
+      @media (min-width: 544px) {}
+
+      /* بزرگتر از تبلت */
+      @media (min-width: 768px) {}
+
+      /* بزرگتر از دسکتاپ */
+      @media (min-width: 992px) {}
+
+      /* بزرگتر از دسکتاپ HD */
+      @media (min-width: 1200px) {}
+            </code>
+          </pre>
+      </div>
+      <div class="row">
+        <h4>ابزارهای جانبی</h4>
+        <hr>
+        <p>
+          مشکی با بهره‌گیری از کلاسهای جانبی، از نوشتن کدهای اضافی CSS جلوگیری می‌کند. شما می‌توانید از کلاس‌های زیر به راحتی در پروژه‌های خود استفاده کنید.
+        </p>
+      </div>
+      <div class="row">
+        <pre>
+          <code class="language-css">
+      /* گسترش دادن یک المان */
+      .expand {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* باعث می‌شود تا اجزا از محدوده‌شان خارج نشوند. برای عکسهای داخل ستون انتخاب مناسبی است. */
+      .responsive {
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* شناور کردن یک جزء به دو طرف */
+      .float-left {
+        float: left !important;
+      }
+
+      .float-right {
+        float: right !important;
+      }
+
+      /* قرار دادن یک جزء در مرکز صفحه */
+      .centerize {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* قرار دادن یک متن در مرکز صفحه */
+      .text-center {
+        text-align: center;
+      }
+
+      /* خط عمودی */
+      .vertical-line {
+        border-left: 1px solid #E1E1E1;
+      }
+
+      /* جزء مورد نظر را در موبایل و فبلت پنهان می‌کند */
+      @media (max-width: 544px) {
+        .hide-on-mobile {
+          display: none;
+        }
+      }
+
+      /* اجزا را از تبلت‌ها پنهان می‌کند */
+      @media (max-width: 768px) {
+        .hide-on-tablet {
+          display: none;
+        }
+      }
+
+      /* اجزا را از دسکتاپ‌ها پنهان می‌کند */
+      @media (min-width: 768px) {
+        .hide-on-desktop {
+          display: none;
+        }
+      }
+
+      /* اجزا را در دستگاه‌هایی غیر از موبایل و فبلت پنهان می‌کند */
+      @media (min-width: 544px) {
+        .hide-on-non-mobile {
+          display: none;
+        }
+      }
+          </code>
+        </pre>
+      </div>
+
+      <div class="row">
+        <div id="extra-button-colors"></div>
+        <h4>[افزونه] دکمه‌های رنگی بیشتر</h4>
+        <hr>
+        <p>
+          مشکی نسخه v1.5.0 و به بالا، دکمه‌های رنگی بیشتری را در اختیار شما قرار میدهد. کافیست کد زیر را به قسمت &lt;head> صفحه‌ی خود اضافه کنید تا بتوانید از این دکمه‌های رنگی بهره مند شوید.
+          <pre>
+            <code class="language-html">
+  &lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/1.5.1/button-colors.min.css">
+            </code>
+          </pre>
+        </p>
+        <p>
+          دکمه‌های رنگی که به عنوان افزونه همراه مشکی منتشر می‌شود، شامل دکمه‌های زیر هستند:
+        </p>
+        <div class="row">
+          <div class="col three">
+            <button class="yellow expand">زرد</button>
+          </div>
+          <div class="col three">
+            <button class="crimson expand">زرشکی</button>
+          </div>
+          <div class="col three">
+            <button class="purple expand">بنفش</button>
+          </div>
+          <div class="col three">
+            <button class="cyan expand">فیروزه‌ای</button>
+          </div
+        </div>
+        <div class="row">
+          <div class="col three">
+            <button class="lime expand">لیمویی</button>
+          </div>
+          <div class="col three">
+            <button class="space expand">فضایی</button>
+          </div>
+          <div class="col three">
+            <button class="brown expand">قهوه‌ای</button>
+          </div>
+          <div class="col three">
+            <button class="rose expand">رز</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="important-notes" class="row">
+        <h4>نکات مهم</h4>
+        <hr>
+        <p>
+          مشکی نسخه 1.5.0 تغییراتی را انجام داده که باعث می‌شود با نسخه‌های قبلی مشکی سازگار نباشد. برای مطلع شدن از تغییرات نسخه‌های مشکی، حتما <a href="https://github.com/Borderliner/Meshki/blob/master/CHANGELOG.md">Changelog</a> را مطالعه کنید تا به اشتباه از مشکی استفاده نکنید.
+        </p>
+      </div>
+
+      <div class="row">
+        <h4>این صفحه شامل...</h4>
+        <hr>
+        <p>
+          <ul>
+            <li>
+              فونت بی‌نظیر "<a href="http://fontawesome.io/" target="_blank">font-awesome</a>" برای نمایش اشکال مختلف است. به نظر من بهترین فونت-آیکون موجود است. حتما به وبسایت این پروژه سری بزنید!
+            </li>
+            <li>
+              <a href="http://prismjs.com/">Prism</a> بی‌رقیب برای رنگی کردن کدهای این صفحه است. بی نظیر است!
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="row">
+      <div class="six col">
+        <p>ساخته شده با <i class="fa fa-heart custom-love"></i> توسط محمدرضا حاجیانپور (<a href="https://github.com/Borderliner">Borderliner</a>)</p>
+      </div>
+      <div class="six col text-center">
+        <p>2016-2017، تحت مجوز <a href="https://github.com/Borderliner/Meshki/blob/master/LICENSE.md">MIT</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript">
+    var percent_update = function() {
+      document.getElementById("percent_value").innerHTML = this.value;
+      console.log(this.value);
+    };
+
+    document.getElementById("percent").onchange = percent_update;
+    document.getElementById("percent").oninput = percent_update;
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.meshki-features i.fa {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.nav i.fa {
+  font-size: 1.8rem;
+}
+
+.logo i.fa {
+  padding-left: 8px;
+}
+
+div.share-links {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: inline-flex;
+}
+
+.share-links .fb-share:hover {
+  color: #4570CC;
+}
+
+.share-links .tw-share:hover {
+  color: #1DA1F2;
+}
+
+.share-links .gp-share:hover {
+  color: #DB4437;
+}
+
+div.share-links i.fa {
+  font-size: 4rem;
+}
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+  background-color: #222 !important;
+}
+
+.title {
+  width: 40vmax;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.col {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  padding-top: 140px;
+}
+
+.grid-table div div {
+  text-align: center;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #222;
+  background-color: #E0E0E0;
+}
+
+.heading-font-size {
+  font-size: 1.2rem;
+  color: #959595;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.custom-textarea {
+  height: 200px;
+}
+
+.custom-love {
+  font-size: 1.7rem !important;
+  color: red;
+  animation: heart-beat 1s infinite;
+}
+
+.custom-down-cdn {
+  width: 250px;
+}
+
+.custom-down-cdn span {
+  font-size: 1.7rem;
+}
+
+@media (min-width: 544px) {
+  .custom-text-right {
+    text-align: right;
+  }
+}
+
+@keyframes heart-beat {
+  0%   { opacity: 1; }
+  100% { opacity: .5; }
+}

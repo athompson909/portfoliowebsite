@@ -1,0 +1,32 @@
+.content {
+
+    width: 58%;
+    min-height:50em;
+}
+
+.wide {
+    margin: 20px 0 0 0;
+    padding: 0 20px 20px 20px;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content li {
+    line-height: 18px;
+    font-weight: 100;
+}
+
+.content li span {
+    font-weight: 900;
+}
+
+.content h5 span {
+    font-style: italic;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 14px;
+}
